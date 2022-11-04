@@ -1,0 +1,8 @@
+.carousel-item img{
+    height: 100px;
+}
+#maclar{
+    display: flex;
+    justify-content: center;
+    
+}
