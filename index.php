@@ -21,17 +21,17 @@
       <div id="mobil" class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link">ANA SAYFA</a>
+            <a href="index.php" class="nav-link">ANA SAYFA</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">HAKKIMIZDA</a>
           </li>
           
           <li class="nav-item">
-            <a href="form.html" class="nav-link">GİRİŞ</a>
+            <a href="form.php" class="nav-link">GİRİŞ</a>
           </li>
           <li class="nav-item">
-            <a href="kayıt.html" class="nav-link">KAYIT OL</a>
+            <a href="kayıtol.php" class="nav-link">KAYIT OL</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">YAPTIKLARIMIZ</a>

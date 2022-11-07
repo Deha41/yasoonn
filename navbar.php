@@ -10,47 +10,32 @@
     <title>Document</title>
 </head>
 <body>
- 
-  <nav class="navbar navbar-dark navbar-expand-lg ">
+<nav class="navbar navbar-dark navbar-expand-lg ">
     <div class="container ">
-      <a href="#" class="navbar-brand">LOGO</a>
+      <a href="index.php" class="navbar-brand">LOGO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobil">
           <span class="navbar-toggler-icon"></span>
         </button>
       <div id="mobil" class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">ANA SAYFA</a>
+            <a href="index.php" class="nav-link">ANA SAYFA</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">HAKKIMIZDA</a>
           </li>
           
           <li class="nav-item">
-            <a href="form.html" class="nav-link">GİRİŞ</a>
+            <a href="form.php" class="nav-link">GİRİŞ</a>
           </li>
           <li class="nav-item">
-            <a href="kayıt.html" class="nav-link">KAYIT OL</a>
+            <a href="kayıtol.php" class="nav-link">KAYIT OL</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">YAPTIKLARIMIZ</a>
+            <a href="yaptıklarımız.php" class="nav-link">YAPTIKLARIMIZ</a>
           </li>
         </ul>
       </div>
   
     </div>
   </nav>
-
-
-
-  <div class="container-fluid mt-5 text-center w-30 fs-4" id="footer">
-    TÜM HAKLARI GİZLİDİR
-  </div>
-
-  
-
-    
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
-</html>
