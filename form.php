@@ -1,4 +1,9 @@
-<?php  include "navbar.php";?>
+<?php  include "navbar.php";
+session_start();
+if(isset($_SESSION["kullanici_mail"])){
+    header( "location:form.php" );
+    
+}?>
 <div class="container " align="center" id="formmm" style="margin-top: 12%;">
   <div class="container bg d-flex justify-content-center  w-50 rounded mx-auto"  id="formm">
                     <form class="" align="center" action="islem2.php" method="POST">

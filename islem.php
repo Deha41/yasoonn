@@ -3,7 +3,7 @@
 require_once 'baglan.php';
 
 if(isset($_POST['ekle'])){
-    $kaydet=$db->prepare("INSERT into  kullanicilar set
+    $kaydet=$db->prepare("INSERT into  kullanicilarr set
     
     kullanici_adsoyad=:kullanici_adsoyad,
     kullanici_telefon=:kullanici_telefon,
@@ -18,9 +18,19 @@ if(isset($_POST['ekle'])){
         'kullanici_mail'=>$_POST['kullanici_mail'],
         'kullanici_sifre'=>$_POST['kullanici_sifre'],
     ));
-    echo "kayıt başarılı";
+    header( "location:kayıtol.php?durum=ok" );
+    
+    
 }
-echo "kayıt başarısız";
+else{header( "location:kayıtol.php?durum=no" );}
+
+
+
+if(isset($_POST['cikis'])){
+    session_destroy();
+    header( "location:index.php" );
+
+}
 
 
 

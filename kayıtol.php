@@ -2,6 +2,25 @@
 <?php  include "navbar.php";
       
 session_start();
+session_start();
+if(isset($_SESSION["kullanici_mail"])){
+    header( "location:profil.php" );
+    
+}
+
+
+
+?>
+<?php
+if( $_GET['durum']=="ok"){
+  echo '<div class="alert alert-success" role="alert">
+  Kayıt Başarıyla Oluşturuldu
+</div>';
+}
+elseif($_GET['durum']=="no"){
+  echo '<div class="alert alert-danger" role="alert">
+  Kayıt Başarısız
+</div>';}
 ?>
 
 <div class="container " align="center" id="form" style="margin-top: 8%;">
