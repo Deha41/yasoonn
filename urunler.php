@@ -9,14 +9,16 @@ $sorgu=$db->prepare("SELECT * FROM urunlerr");
 $sorgu->execute();
 if($sorgu->rowCount()){
 ?>
+
 <div class="container">
 <div class="row row-cols-1 row-cols-md-2 row-cols-sm-1 row-cols-lg-4 text-center">
 <?php
     foreach($sorgu as $sorgular){
       ?>
       <div class="col mb-3 mt-3">
+     
         <div class="card" style=" dispplay=flex;">
-        <img src="..." class="card-img-top" alt="...">
+        <img src='picture/urunler/<?php echo $sorgular['urun_foto'] ?>' class="card-img-top" alt="..." style="border-radius:5px">
         <div class="card-body">
           <h5 class="card-title"><?php echo $sorgular['urunler_ad'] ?></h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>

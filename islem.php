@@ -31,6 +31,25 @@ if(isset($_POST['cikis'])){
     header( "location:index.php" );
 
 }
+if(isset($_POST['sepet'])){
+    $kaydet=$db->prepare("INSERT into  sepet set
+    
+    kullanici_id=:kullanici_id,
+    urun_id=:urun_id,
+    
+   
+    ");
+    $insert=$kaydet->execute(array(
+        'kullanici_id'=>$_POST['kullanici_id'],
+        'urun_id'=>$ciktii["urunler_id"],
+        
+       
+    ));
+    header( "location:urunler.php?durum=ok" );
+    
+    
+}
+else{header( "location:urunler.php?durum=no" );}
 
 
 

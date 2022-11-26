@@ -4,12 +4,20 @@ if(isset($_SESSION["kullanici_mail"])){
     header( "location:form.php" );
     
 }?>
+<?php
+if( $_GET['durum']=="no"){
+  echo '<div class="alert alert-danger" role="alert">
+  GİRİŞ Başarısız
+</div>';
+}
+
+?>
 <div class="container " align="center" id="formmm" style="margin-top: 12%;">
   <div class="container bg d-flex justify-content-center  w-50 rounded mx-auto"  id="formm">
                     <form class="" align="center" action="islem2.php" method="POST">
                         <div class="mb-4">
                         <label class="form-label">Mail</label>
-                        <input type="email" class="form-control" name="mail">
+                        <input type="email" class="form-control" name="mail" >
                         </div>
                         <div class="mb-3">
                         <label  class="form-label">Şifre</label>

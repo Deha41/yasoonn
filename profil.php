@@ -19,6 +19,8 @@ if(!isset($_SESSION["kullanici_mail"])){
             <li class="list-group-item text-center"><?php echo $_SESSION["kullanici_telefon"]; ?></li>
             <li class="list-group-item text-center fw-bold">Mail</li>
             <li class="list-group-item text-center"><?php echo $_SESSION['kullanici_mail']; ?></li>
+            <li class="list-group-item text-center fw-bold">kullanici id</li>
+            <li class="list-group-item text-center"><?php echo $_SESSION["kullanici"]; ?></li>
         </ul>
     </div>
 </div>

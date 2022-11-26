@@ -28,23 +28,23 @@ elseif($_GET['durum']=="no"){
         <form class="" align="center" action="islem.php" method="POST">
             <div class="mb-4">
             <label class="form-label">Mail</label>
-            <input type="text" require="" name="kullanici_mail" class="form-control" >
+            <input type="text" required name="kullanici_mail" class="form-control" >
             </div>
             <div class="mb-4">
             <label class="form-label">Ad Soyad</label>
-            <input type="text" require="" name="kullanici_adsoyad" class="form-control" >
+            <input type="text" required name="kullanici_adsoyad" class="form-control" >
             </div>
             <div class="mb-4">
             <label class="form-label">Adres</label>
-            <input type="text" require="" name="kullanici_adres" class="form-control" >
+            <input type="text" required name="kullanici_adres" class="form-control" >
             </div>
             <div class="mb-3">
             <label  class="form-label">Şifre</label>
-            <input type="password" require="" name="kullanici_sifre" class="form-control" >
+            <input type="password" required name="kullanici_sifre" class="form-control" >
             </div>
             <div class="mb-3">
             <label  class="form-label">Telefon</label>
-            <input type="text" require="" name="kullanici_telefon" class="form-control" >
+            <input type="text" required name="kullanici_telefon" class="form-control" >
             </div>
             <button type="submit" name="ekle" class="btn btn-primary">Kayıt Ol</button>
         </form>

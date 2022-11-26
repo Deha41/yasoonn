@@ -26,24 +26,24 @@ session_start();
             <a href="index.php" class="nav-link">ANA SAYFA</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">HAKKIMIZDA</a>
-          </li>
-          <li class="nav-item">
             <a href="yaptıklarımız.php" class="nav-link">YAPTIKLARIMIZ</a>
           </li>
           <?php
             if($_SESSION["login"]==1){?>
               <li class="nav-item">
               <a href="cikis.php" name="cikis" class="nav-link">ÇIKIŞ</a>
-            </li>'<li class="nav-item">
+            </li><li class="nav-item">
             <a href="urunler.php"  class="nav-link">ÜRÜNLER</a>
+          </li>
+          </li><li class="nav-item">
+            <a href="sepet.php"  class="nav-link">SEPETİM</a>
           </li>
           <?php
             }
             else{?>
              <li class="nav-item">
               <a href="form.php" class="nav-link">GİRİŞ</a>
-            </li>';
+            </li>
             <li class="nav-item">
             <a href="kayıtol.php" class="nav-link">KAYITOL</a>
           </li>
